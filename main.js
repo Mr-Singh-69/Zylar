@@ -59,11 +59,6 @@ client.on('messageCreate', (message) => {
       help with farming`);                       
   }
     
-    
-
-    
-  }
-    
 });
     
     
