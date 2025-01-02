@@ -6,7 +6,7 @@ require('dotenv').config();
 keepAlive();
 
 client.once('ready', () => {
-    console.log('Agro Ratana is online!');
+    console.log('Zylar is online!');
 });
 
 client.on('messageCreate', (message) => {
