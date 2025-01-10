@@ -2,7 +2,7 @@ const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const config = require('./config.json');
+require('dotenv').config();
 
 const bot = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
@@ -25,7 +25,7 @@ for (const file of eventFiles) {
     }
 }
 
-bot.login(config.token);
+bot.login(process.env.TOKEN);
 
 // Express server
 const app = express();
