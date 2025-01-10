@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Bot Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular Discord Bot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #2c2f33;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #7289da;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #99aab5;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #23272a;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h2 {
+      color: #7289da;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b9bbbe;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #99aab5;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the Discord Bot Dashboard</h1>
-    <p>This bot is running on your local server.</p>
-    <p>Available commands:</p>
-    <ul>
-        <li>!ping - Replies with Pong!</li>
-    </ul>
+  <header>
+    <h1>Modular Discord Bot</h1>
+    <p>A powerful Discord bot designed with modular components</p>
+  </header>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>Core Module</h2>
+      <p>Handles basic bot functions like responding to commands, managing events, and connecting to Discord servers.</p>
+    </div>
+
+    <div class="card">
+      <h2>Music Module</h2>
+      <p>Allows users to play, pause, and queue music directly from YouTube and Spotify links.</p>
+    </div>
+
+    <div class="card">
+      <h2>Economy Module</h2>
+      <p>Features an economy system with virtual currency, shops, and leaderboards.</p>
+    </div>
+
+    <div class="card">
+      <h2>Moderation Module</h2>
+      <p>Provides moderation commands like kick, ban, mute, and warn to help manage server members.</p>
+    </div>
+
+    <div class="card">
+      <h2>Fun Module</h2>
+      <p>Includes various fun commands like memes, jokes, trivia, and mini-games.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Navdeep's Discord Bot | Built with 💙
+  </footer>
 </body>
 </html>
