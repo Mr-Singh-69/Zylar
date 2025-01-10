@@ -1,5 +1,0 @@
-require('dotenv').config();
-{
-  "token": process.env.TOKEN,
-  "prefix": "!"
-}
