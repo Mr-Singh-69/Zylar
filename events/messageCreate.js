@@ -3,7 +3,7 @@ module.exports = {
     execute(message, bot) {
         if (!message.content.startsWith('!') || message.author.bot) return;
 
-        const args = message.content.slice(config.prefix.length).trim().split(/ +/);
+        const args = message.content.slice('!').trim().split(/ +/);
         const commandName = args.shift().toLowerCase();
 
         const command = bot.commands.get(commandName);
